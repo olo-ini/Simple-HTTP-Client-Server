@@ -1,2 +1,5 @@
 # Simple-HTTP-Client-Server
-A simple HTTP client and sever in Java
+This program consists of three processes- the client process, the proxy process and the web server process. It is advisable to set up the web server first by passing the port number you require it to be set up on when calling the webserver program. You can then set up the proxy server simply by providing the port number for the [proxy][webserver] in that order. The order is very important. The client only requires the port number for the proxy server. Both client and proxy default to localhost.
+The program only works for GET AND POST requests as well as http, https, ftp protocols only. Not adhering to these rules will lead to less than favourable results in the usage of this code.
+The program prints ‘progress report’ statements like ‘Connecting server socket to port’, Waiting for proxy request, found proxy server and others.
+I expect that on a successful run of the program, a file will be created in the current working directory called request.html. If this file isn’t created, the program will not run. The user isn’t required to change anything in regard to this, but it’s important to check that the file is been created in the right directory.
